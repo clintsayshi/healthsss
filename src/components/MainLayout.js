@@ -120,6 +120,36 @@ function MainLayout() {
                         </p>
                       </div>
                     </div>
+                    {/* Alert */}
+                    <div className="py-6 flex flex-col gap-5">
+                      <div className="w-max px-4 py-2 flex items-center gap-2 border border-blue-600 rounded-full">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-6 h-6"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5"
+                          />
+                        </svg>
+
+                        <p>
+                          The patient's BP has dropped and may requires
+                          immediate attention{" "}
+                          <a
+                            href="tel:0840120417"
+                            className="px-2 py-1 bg-blue-500 text-white rounded-full"
+                          >
+                            Contact Patient
+                          </a>
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
                   {/* Graphs */}
@@ -135,37 +165,6 @@ function MainLayout() {
                   </div>
 
                   <div class="w-full border grid grid-cols-12 col-span-12 gap-6 mt-5">
-                    <a
-                      class="transform  hover:scale-105 transition duration-300 shadow-xl rounded-lg col-span-12 sm:col-span-6 xl:col-span-3 intro-y bg-white"
-                      href="#"
-                    >
-                      <div class="p-5">
-                        <div class="flex justify-between">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="text-4 text-blue-400"
-                            height="48"
-                            width="48"
-                          >
-                            <path d="M4 19.5V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v8.5h-3V11H7v8.5ZM7 40q-1.2 0-2.1-.9Q4 38.2 4 37v-8.5h3V37h34v-8.5h3V37q0 1.2-.9 2.1-.9.9-2.1.9Zm13-6.5q.4 0 .775-.2t.575-.6L28 19.4l2.65 5.3q.2.4.575.6.375.2.775.2h12v-3H32.95l-3.6-7.15q-.2-.4-.575-.575Q28.4 14.6 28 14.6t-.775.175q-.375.175-.575.575L20 28.6l-2.65-5.3q-.2-.4-.575-.6-.375-.2-.775-.2H4v3h11.05l3.6 7.2q.2.4.575.6.375.2.775.2Zm4-9.5Z" />
-                          </svg>
-                          <div class="bg-green-500 rounded-full h-6 px-2 flex justify-items-center text-white font-semibold text-sm">
-                            <span class="flex items-center">30%</span>
-                          </div>
-                        </div>
-                        <div class="ml-2 w-full flex-1">
-                          <div>
-                            <div class="mt-3 text-3xl font-bold leading-8">
-                              75 bpm
-                            </div>
-
-                            <div class="mt-1 text-base text-gray-600">
-                              Heart Rate
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
                     <a
                       class="transform  hover:scale-105 transition duration-300 shadow-xl rounded-lg col-span-12 sm:col-span-6 xl:col-span-3 intro-y bg-white"
                       href="#"
@@ -261,8 +260,8 @@ function MainLayout() {
                               d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
                             />
                           </svg>
-                          <div class="bg-blue-500 rounded-full h-6 px-2 flex justify-items-center text-white font-semibold text-sm">
-                            <span class="flex items-center">30%</span>
+                          <div class="bg-red-500 rounded-full h-6 px-2 flex justify-items-center text-white font-semibold text-sm">
+                            <span class="flex items-center">25%</span>
                           </div>
                         </div>
                         <div class="ml-2 w-full flex-1">

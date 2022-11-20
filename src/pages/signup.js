@@ -168,7 +168,7 @@ const SignUp = () => {
             required
           />
 
-          {/* <label
+          <label
             htmlFor="age"
             className="block mt-2 text-xs font-semibold text-gray-600 uppercase"
           >
@@ -182,9 +182,8 @@ const SignUp = () => {
             max="99"
             className="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
             required
-          /> */}
+          />
 
-          {/* 
           <label
             htmlFor="location"
             className="block mt-2 text-xs font-semibold text-gray-600 uppercase"
@@ -199,7 +198,7 @@ const SignUp = () => {
             className="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
             required
           />
-
+          {/* 
           <label
             class="switch"
             className="flex items-center py-4 mt-2 text-xs font-semibold text-gray-600 uppercase"
@@ -225,7 +224,7 @@ const SignUp = () => {
             className="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"
             required
           />
-
+          */}
           <label
             htmlFor="occupation"
             className="block mt-2 text-xs font-semibold text-gray-600 uppercase"
@@ -241,7 +240,7 @@ const SignUp = () => {
             {occupations.map((item, id) => (
               <option key={id}>{item}</option>
             ))}
-          </select> */}
+          </select>
 
           <label
             htmlFor="password"
